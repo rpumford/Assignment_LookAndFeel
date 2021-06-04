@@ -1,88 +1,143 @@
-@media only screen and (max-width: 600px) {
-    .leftMenu, .rightMenu, .threeColumnBody {
+@media only screen and (max-width: 40em) {
+    .leftMenu, .centered {
         width: 100%;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1 0 auto;
+        box-sizing: border-box;
+        margin: 1rem .25em;
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    .leftMenu, .rightMenu, .threeColumnBody {
-        width: 80%;
+@media only screen and (min-width: 40em) and (max-width: 59em) {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 calc(42% - 1em);
+        box-sizing: border-box;
+        margin: 1rem .25em;
     }
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 60em) {
     .leftMenu {
-        width: 26%;
+        width: 15%;
     }
-    .rightMenu {
-        width: 24%;
+
+    .centered {
+        width: 83%;
     }
-    .threeColumnBody {
-        width: 50%;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+
+    .card {
+        flex: 0 1 calc(21% - 1em);
+        border-style: solid;
+        border-color: red;
+        border-width: 4px;
+    }
+
 }
 
 
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
 html {
     height: 100%;
-    background-image: url('https://cdn.pixabay.com/photo/2020/11/01/14/38/sea-5703965_1280.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.pixabay.com/photo/2020/11/01/14/38/sea-5703965_1280.jpg');
     background-position: center;
     background-size: cover;
+    color: honeydew; /*default text color so you don't have to specify*/
 }
 
+/*********************************
+    TOP MENU
+**********************************/
+.topMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+}
+
+    .topMenu li {
+        float: left;
+
+    }
+
+        .topMenu li a {
+            display: block;
+            color: honeydew;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            .topMenu li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+.active {
+    background-color: #04AA6D;
+}
+
+/*********************************
+    HEADER
+**********************************/
 .header {
-    background-color: azure;
-    background-blend-mode: difference;
-    color: darkslategray;
+    
 }
-/*Set background image*/
-.threeColumnBody {
 
+/*********************************
+    MAIN BODY
+**********************************/
+.twoColumnBody {
 
 }
 
 .leftMenu {
     float: left;
     background-color: darkslategrey;
-    color:azure;
-    font-size: 25px;
+    font-size: 20px;
+
+}
+.centered {
+    float: left;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+.middleContainer {
+    
 }
 
 .rightMenu {
     float: right;
     background-color: darkslategrey;
-    color: azure;
-    font-size: 25px;
+    font-size: 20px;
+
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
-}
+/* red border for testing different containers
+    border-style: solid;
+    border-width: 4px;
+    border-color: red;
+*/
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
-}
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
-}
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
-}
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
-}
