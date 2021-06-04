@@ -1,16 +1,59 @@
+@media only screen and (max-width: 600px) {
+    .leftMenu, .rightMenu, .threeColumnBody {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .leftMenu, .rightMenu, .threeColumnBody {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .leftMenu {
+        width: 26%;
+    }
+    .rightMenu {
+        width: 24%;
+    }
+    .threeColumnBody {
+        width: 50%;
+    }
+}
+
 
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body,
 html {
-  height: 100%;
-}
-
-/*Set background image*/
-.container {
-    background-image: url('https://cdn.pixabay.com/photo/2020/11/01/14/38/sea-5703965_1280.jpg');
     height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2020/11/01/14/38/sea-5703965_1280.jpg');
     background-position: center;
     background-size: cover;
+}
+
+.header {
+    background-color: azure;
+    background-blend-mode: difference;
+    color: darkslategray;
+}
+/*Set background image*/
+.threeColumnBody {
+
+
+}
+
+.leftMenu {
+    float: left;
+    background-color: darkslategrey;
+    color:azure;
+    font-size: 25px;
+}
+
+.rightMenu {
+    float: right;
+    background-color: darkslategrey;
+    color: azure;
+    font-size: 25px;
 }
 
 /* Position text in the middle */
