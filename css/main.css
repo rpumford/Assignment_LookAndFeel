@@ -1,4 +1,4 @@
-@media only screen and (max-width: 40em) {
+@media only screen and ( swdmax-width: 40em) {
     .leftMenu, .centered {
         width: 100%;
     }
@@ -58,7 +58,8 @@
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 html {
     height: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.pixabay.com/photo/2020/11/01/14/38/sea-5703965_1280.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.libertytravel.com/sites/default/files/styles/full_size/public/all%20inclusive-hero%20%281%29.jpg?itok=JjwsPBPZ');
+	/*url('https://www.coremedicalgroup.com/hubfs/Core%20Medical%20June%202018/Home%20Page/banner_image.png');*/
     background-position: center;
     background-size: cover;
     color: honeydew; /*default text color so you don't have to specify*/
@@ -113,7 +114,7 @@ html {
 .leftMenu {
     float: left;
     background-color: darkslategrey;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 .centered {
@@ -130,7 +131,7 @@ html {
 .rightMenu {
     float: right;
     background-color: darkslategrey;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
