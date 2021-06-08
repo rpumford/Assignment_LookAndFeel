@@ -1,0 +1,68 @@
+<!--Your HTML code here-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sean wrote this-->
+<head>
+    
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chart.js examples</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+</head>
+
+<body>
+    
+
+    <div class="header">
+        <h1>Travel chart</h1>
+    </div>
+
+    <div class="twoColumnBody">
+        <div class="leftMenu">
+           
+        </div>
+
+        <div class="centered">
+
+            <section class="cards">
+				 <h1></h1>
+
+					  <canvas id="barchartexample" width="300" height="150"></canvas>
+
+					  <script>
+						new Chart(document.getElementById("barchartexample"), {
+						  type: 'bar',
+						  data: {
+							labels: ["Paris", "Barcelona", "Switzerland", "Monaco"],
+							datasets: [
+							  {
+								label: " Tourists ( in thousands) ",
+								backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
+								data: [878, 526, 2233, 1000]
+							  }
+							]
+						  },
+						  options: {
+							legend: { display: false },
+							title: {
+							  display: true,
+							  text: 'Tourists Travelled ( in Thousands)'
+							}
+						  }
+						});
+					  </script>
+							   
+            </section>
+        </div>
+
+    </div>
+	
+	
+	
+</body>
+
+
+
+</html>
