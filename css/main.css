@@ -12,10 +12,13 @@
         flex: 1 0 auto;
         box-sizing: border-box;
         margin: 1rem .25em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        background-color: rgb(100, 100, 100, .5);
     }
 }
 
-@media only screen and (min-width: 40em) and (max-width: 59em) {
+@media only screen and (min-width: 40em) and (max-width: 60em) {
 
     .cards {
         display: flex;
@@ -27,6 +30,9 @@
         flex: 0 1 calc(42% - 1em);
         box-sizing: border-box;
         margin: 1rem .25em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        background-color: rgb(100, 100, 100, .5);
     }
 }
 
@@ -47,9 +53,9 @@
 
     .card {
         flex: 0 1 calc(21% - 1em);
-        border-style: solid;
-        border-color: red;
-        border-width: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        background-color: rgb(100, 100, 100, .5);
     }
 
 }
@@ -59,7 +65,9 @@
 html {
     height: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.libertytravel.com/sites/default/files/styles/full_size/public/all%20inclusive-hero%20%281%29.jpg?itok=JjwsPBPZ');
-	/*url('https://www.coremedicalgroup.com/hubfs/Core%20Medical%20June%202018/Home%20Page/banner_image.png');*/
+    /*url('https://www.coremedicalgroup.com/hubfs/Core%20Medical%20June%202018/Home%20Page/banner_image.png');*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     color: honeydew; /*default text color so you don't have to specify*/
