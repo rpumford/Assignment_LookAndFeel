@@ -13,54 +13,58 @@
 </head>
 
 <body>
-    
+	<ul class="topMenu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Chart.html">Chart</a></li>
+		<li><a href="About.html">About</a></li>
+	</ul>
 
-    <div class="header">
-        <h1>Travel chart</h1>
-    </div>
+	<div class="header">
+		<h1>Travel chart</h1>
+	</div>
 
-    <div class="twoColumnBody">
-        <div class="leftMenu">
-           
-        </div>
+	<div class="twoColumnBody">
+		<div class="leftMenu">
 
-        <div class="centered">
+		</div>
 
-            <section class="cards">
-				 <h1></h1>
+		<div class="centered">
 
-					  <canvas id="barchartexample" width="300" height="150"></canvas>
+			<section class="cards">
+				<h1></h1>
 
-					  <script>
-						new Chart(document.getElementById("barchartexample"), {
-						  type: 'bar',
-						  data: {
+				<canvas id="barchartexample" width="300" height="150"></canvas>
+
+				<script>
+					new Chart(document.getElementById("barchartexample"), {
+						type: 'bar',
+						data: {
 							labels: ["Paris", "Barcelona", "Switzerland", "Monaco"],
 							datasets: [
-							  {
-								label: " Tourists ( in thousands) ",
-								backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
-								data: [878, 526, 2233, 1000]
-							  }
+								{
+									label: " Tourists ( in thousands) ",
+									backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
+									data: [878, 526, 2233, 1000]
+								}
 							]
-						  },
-						  options: {
+						},
+						options: {
 							legend: { display: false },
 							title: {
-							  display: true,
-							  text: 'Tourists Travelled ( in Thousands)'
+								display: true,
+								text: 'Tourists Travelled ( in Thousands)'
 							}
-						  }
-						});
-					  </script>
-							   
-            </section>
-        </div>
+						}
+					});
+				</script>
 
-    </div>
-	
-	
-	
+			</section>
+		</div>
+
+	</div>
+
+
+
 </body>
 
 
